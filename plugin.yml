@@ -1,13 +1,10 @@
 name: DynamicEconomy
 main: me.ksafin.DynamicEconomy.DynamicEconomy
-version: .8.7
-
+version: 9.3
 description: This plugin allows users to buy and sell items at dynamically generated prices.
-author: kSafin (Kirill Safin)
-website: http://dev.bukkit.org/server-mods/dynamiceconomy-v-01/
-
+authors: [kSafin, bitWolfy]
+dev-url: http://dev.bukkit.org/server-mods/dynamiceconomy-v-01/
 depend: [Vault]
-
 commands:
    price:
      description: Returns the Price of an Item.

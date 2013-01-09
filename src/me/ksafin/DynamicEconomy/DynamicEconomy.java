@@ -7,6 +7,7 @@ import java.io.IOException;
 import couk.Adamki11s.AutoUpdater.*;
 
 
+import me.ksafin.DynamicEconomy.settings.Settings;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.*;
 
@@ -32,6 +33,7 @@ import couk.Adamki11s.Extras.Extras.Extras;
 public class DynamicEconomy extends JavaPlugin {
     
     public static FileConfiguration config;
+    private static Settings settings;
     
     String name;
     String version;
@@ -154,6 +156,8 @@ public class DynamicEconomy extends JavaPlugin {
             
         
             log.info(name +" v" + version + " by " + author.get(0) + " enabled!");
+            
+            settings = new Settings(this);
             
             boolean economyIsSet = setupEconomy();
             boolean permissionIsSet = setupPermissions();
@@ -486,25 +490,6 @@ public class DynamicEconomy extends JavaPlugin {
             
     }
     
-    private Boolean setupEconomy()
-    {
-        RegisteredServiceProvider<Economy> economyProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
-        if (economyProvider != null) {
-            economy = economyProvider.getProvider();
-        }
-
-        return (economy != null);
-    }
-    
-    private Boolean setupPermissions()
-    {
-        RegisteredServiceProvider<Permission> permissionProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.permission.Permission.class);
-        if (permissionProvider != null) {
-            permission = permissionProvider.getProvider();
-        }
-        return (permission != null);
-    }
-    
     public static void reloadConfigValues(Player player, String[] args){
     	
     	relConfig();
@@ -558,7 +543,7 @@ public class DynamicEconomy extends JavaPlugin {
         
         if (interestRate == 0.0) {
         	
-        	plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
+        	plugin.getServer().getScheduler().runTaskLater(plugin, new Runnable() {
 
         	    public void run() {
         	    	loan.dynamicInterest(true);
@@ -625,4 +610,20 @@ public class DynamicEconomy extends JavaPlugin {
     	
     }
     
+    private boolean setupEconomy() {
+        RegisteredServiceProvider<Economy> economyProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
+        if (economyProvider != null) economy = economyProvider.getProvider();
+        return (economy != null);
+    }
+    
+    private boolean setupPermissions()  {
+        RegisteredServiceProvider<Permission> permissionProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.permission.Permission.class);
+        if (permissionProvider != null) permission = permissionProvider.getProvider();
+        return (permission != null);
+    }
+    
+    public static Settings getSettings() { return settings; }
+    public static DynamicEconomy getInstance() { return plugin; }
+    
+    public static double getVersion() { return Double.parseDouble(plugin.getDescription().getVersion()); }
 }
