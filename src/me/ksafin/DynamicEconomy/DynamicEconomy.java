@@ -382,19 +382,19 @@ public class DynamicEconomy extends JavaPlugin {
             relConfig();
             
             if (DynamicEconomy.useLoans) {
-            	this.getServer().getScheduler().scheduleSyncRepeatingTask(this, new loan(), 300L, loanCheckInterval);
+            	this.getServer().getScheduler().runTaskTimer(this, new loan(), 300L, loanCheckInterval);
             	log.info("[DynamicEconomy] Loan Thread Spawned with delay of " + loanCheckInterval + " ticks");
             }
             
             if ((DynamicEconomy.enableOverTimePriceDecay) || (DynamicEconomy.enableOverTimePriceInflation)) {
             	long delay = DynamicEconomy.overTimePriceChangePeriodCheck * 60 * 20;
-            	this.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Transaction(itemConfig,itemsFile), 300L, delay);
+            	this.getServer().getScheduler().runTaskTimer(this, new Transaction(itemConfig,itemsFile), 300L, delay);
             	log.info("[DynamicEconomy] Price Change Thread Spawned with delay of " + delay + " ticks");
             }
             
             if (DynamicEconomy.enableRandomEvents) {
             	long delay = DynamicEconomy.randomEventInterval * 60 * 20;
-            	this.getServer().getScheduler().scheduleSyncRepeatingTask(this, new RandomEvent(), 300L, delay);
+            	this.getServer().getScheduler().runTaskTimer(this, new RandomEvent(), 300L, delay);
             	log.info("[DynamicEconomy] Random Events Thread Spawned with delay of " + delay + " ticks");
             }
             
@@ -558,7 +558,7 @@ public class DynamicEconomy extends JavaPlugin {
         
         if (interestRate == 0.0) {
         	
-        	plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
+        	plugin.getServer().getScheduler().runTaskLater(plugin, new Runnable() {
 
         	    public void run() {
         	    	loan.dynamicInterest(true);

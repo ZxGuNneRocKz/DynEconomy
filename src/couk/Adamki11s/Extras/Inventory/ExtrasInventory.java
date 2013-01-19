@@ -3,7 +3,7 @@ package couk.Adamki11s.Extras.Inventory;
 import java.util.HashMap;
 
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_4_6.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_4_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 

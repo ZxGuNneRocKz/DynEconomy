@@ -6,10 +6,10 @@ import org.bukkit.Material;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
-import org.bukkit.craftbukkit.v1_4_6.entity.CraftPlayer;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.craftbukkit.v1_4_R1.entity.CraftPlayer;
 
 public class ExtrasPlayer extends PlayerMethods {
 
