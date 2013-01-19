@@ -1,6 +1,6 @@
 name: DynamicEconomy
 main: me.ksafin.DynamicEconomy.DynamicEconomy
-version: .8.7
+version: 9.3
 
 description: This plugin allows users to buy and sell items at dynamically generated prices.
 author: kSafin (Kirill Safin)

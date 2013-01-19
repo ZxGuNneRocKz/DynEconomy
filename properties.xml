@@ -1,0 +1,6 @@
+<plugin>
+	<name>DynamicEconomy</name>
+	<version>9.3</version>
+	<craftbukkit>CB 1.4.7-R0.1</craftbukkit>
+	<type>Development Build</type>
+</plugin>
