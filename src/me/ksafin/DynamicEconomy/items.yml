@@ -1,77 +1,4337 @@
 # This file stores information for all types of purchase-able items.
 # These properties are automatically updated, but feel free to change them at your whim.
-
+# 
 # Original prices based around the "Gold Standard" ie; Gold Ingot is 300g, all other prices based on 
 # their value in relation to a Gold Ingot.
-
+# 
 # Some blocks are commented out due to the fact that they aren't normally attained without spawning.
 # Their values are not set, but feel free to enable them and set their values.
 
 STONE:
-  velocity: .01
   id: 1
-  price: .5
-  priceFloor: .01
-  priceCeiling: 1
-  description: 'A Smooth Stone'
-  
-# GRASS:
-#   velocity: .01
-#   id: 2
-#   price: .5
-#   priceFloor: .01
-#   priceCeiling: 1
-#   description: 'A Smooth Stone'
-
+  price: 0.59
+  floor: 0.01
+  ceiling: 1
+  description: A Smooth Stone
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GRASS:
+  id: 2
+  price: 0.59
+  floor: 0.01
+  ceiling: 1
+  description: Grassy Green!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
 DIRT:
-  velocity: .001
   id: 3
-  price: .02
-  priceFloor: .001
-  priceCeiling: .3
-  description: 'Dirt dug from the crust of the world'
-  
+  price: 0.18
+  floor: 0.0010
+  ceiling: 0.3
+  description: Dirt dug from the crust
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
 COBBLESTONE:
-  velocity: .01
   id: 4
-  price: .1
-  priceFloor: .01
-  priceCeiling: .5
-  description: 'Un-refined rock'
-
+  price: 0.3
+  floor: 0.01
+  ceiling: 0.5
+  description: Un-refined rock
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
 PLANK:
-  velocity: .01
   id: 5
-  price: .2
-  priceFloor: .01
-  priceCeiling: .4
-  description: 'Processed wood. Ready for construction!'
-
+  price: 0.24
+  floor: 0.01
+  ceiling: 0.4
+  description: Processed wood
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PINEPLANK:
+  id: 5001
+  price: 0.24
+  floor: 0.01
+  ceiling: 0.4
+  description: Processed wood
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BIRCHPLANK:
+  id: 5002
+  price: 0.24
+  floor: 0.01
+  ceiling: 0.4
+  description: Processed wood
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+JUNGLEPLANK:
+  id: 5003
+  price: 0.24
+  floor: 0.01
+  ceiling: 0.4
+  description: Processed wood
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+OAKSLAB:
+  id: 126
+  price: 0.2
+  floor: 0.01
+  ceiling: 0.4
+  description: Processed wood
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PINESLAB:
+  id: 126001
+  price: 0.2
+  floor: 0.01
+  ceiling: 0.4
+  description: Processed wood
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BIRCHSLAB:
+  id: 126002
+  price: 0.2
+  floor: 0.01
+  ceiling: 0.4
+  description: Processed wood
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+JUNGLESLAB:
+  id: 126003
+  price: 0.2
+  floor: 0.01
+  ceiling: 0.4
+  description: Processed wood
+  stock: 50
+  span: 100
 SAPLING:
-  velocity: .01
   id: 6
-  price: .2
-  priceFloor: .01
-  priceCeiling: .45
-  description: 'A small plant, able to become a flourishing tree.'
-    
-# BEDROCK:
-#   velocity: .01
-#   id: 7
-#   price: .5
-#   priceFloor: .01
-#   priceCeiling: 1
-#   description: 'A Smooth Stone'
-
-
+  price: 0.27
+  floor: 0.01
+  ceiling: 0.45
+  description: A small plant
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BIRCHSAPLING:
+  id: 6001
+  price: 0.27
+  floor: 0.01
+  ceiling: 0.45
+  description: A small plant
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PINESAPLING:
+  id: 6002
+  price: 0.27
+  floor: 0.01
+  ceiling: 0.45
+  description: A small plant
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+JUNGLESAPLING:
+  id: 6003
+  price: 0.27
+  floor: 0.01
+  ceiling: 0.45
+  description: A small plant
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BEDROCK:
+  id: 7
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: An unbreakable block that is found at the bottom of the world.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WATER:
+  id: 8
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Liquid H20
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STILLWATER:
+  id: 9
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Liquid H20
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LAVA:
+  id: 10
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Molten Volcano stuff!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STILLLAVA:
+  id: 11
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Molten Volcano stuff!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
 SAND:
-  velocity: .001
   id: 12
-  price: .04
-  priceFloor: .001
-  priceCeiling: .3
-  description: 'Found on beaches!'
-
-
-    
----
+  price: 0.18
+  floor: 0.0010
+  ceiling: 0.3
+  description: Found on beaches!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GRAVEL:
+  id: 13
+  price: 0.18
+  floor: 0.0010
+  ceiling: 0.3
+  description: Useless cave slush
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDORE:
+  id: 14
+  price: 337.87
+  floor: 250
+  ceiling: 400
+  description: Prettiest metal ever!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONORE:
+  id: 15
+  price: 59.29
+  floor: 30
+  ceiling: 80
+  description: Tough as steel!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COALORE:
+  id: 16
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Good for burning!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOOD:
+  id: 17
+  price: 0.63
+  floor: 0.1
+  ceiling: 1
+  description: Part of a tree!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BIRCHWOOD:
+  id: 17002
+  price: 0.63
+  floor: 0.1
+  ceiling: 1
+  description: Part of a tree!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PINEWOOD:
+  id: 17001
+  price: 0.63
+  floor: 0.1
+  ceiling: 1
+  description: Part of a tree!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+JUNGLEWOOD:
+  id: 17003
+  price: 0.63
+  floor: 0.1
+  ceiling: 1
+  description: Part of a tree!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPONGE:
+  id: 19
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Soaks up water like nothing else!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GLASS:
+  id: 20
+  price: 0.38
+  floor: 0.2
+  ceiling: 0.5
+  description: Clear as day.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LAPISLAZULIORE:
+  id: 21
+  price: 33.43
+  floor: 10
+  ceiling: 50
+  description: Prettiest ore in the world
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LAPISLAZULIBLOCK:
+  id: 22
+  price: 33.43
+  floor: 10
+  ceiling: 50
+  description: Prettiest ore in the world
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DISPENSER:
+  id: 23
+  price: 3.34
+  floor: 1
+  ceiling: 5
+  description: Dispenses stuff!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SANDSTONE:
+  id: 24
+  price: 0.33
+  floor: 0.1
+  ceiling: 0.5
+  description: Looks like sand, feels like stone!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+HIEROGLYPHICSANDSTONE:
+  id: 24001
+  price: 0.33
+  floor: 0.1
+  ceiling: 0.5
+  description: Looks like sand, feels like stone!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SMOOTHSANDSTONE:
+  id: 24002
+  price: 0.33
+  floor: 0.1
+  ceiling: 0.5
+  description: Looks like sand, feels like stone!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NOTEBLOCK:
+  id: 25
+  price: 3.24
+  floor: 0.75
+  ceiling: 5
+  description: Plays musical notes
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BED:
+  id: 355
+  price: 3.14
+  floor: 0.5
+  ceiling: 5
+  description: Useful for sleeping!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POWEREDRAIL:
+  id: 27
+  price: 304.29
+  floor: 275
+  ceiling: 325
+  description: A rail that can power minecarts
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DETECTORRAIL:
+  id: 28
+  price: 61.99
+  floor: 45
+  ceiling: 74
+  description: Provides power!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STICKYPISTON:
+  id: 29
+  price: 126.36
+  floor: 100
+  ceiling: 145
+  description: Grabs and moves blocks!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WEB:
+  id: 30
+  price: 21.72
+  floor: 10
+  ceiling: 30
+  description: A spiders sweet home.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DEADSHRUB:
+  id: 31
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Tall Grass in dead shrub form
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+TALLGRASS:
+  id: 31001
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Tall Grass
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FERN:
+  id: 31002
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Tall Grass in Fern form!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PISTON:
+  id: 33
+  price: 55.86
+  floor: 50
+  ceiling: 60
+  description: Moves stuff!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOOL:
+  id: 35
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ORANGEWOOL:
+  id: 35001
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MAGENTAWOOL:
+  id: 35002
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LIGHTBLUEWOOL:
+  id: 35003
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+YELLOWWOOL:
+  id: 35004
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LIMEWOOL:
+  id: 35005
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PINKWOOL:
+  id: 35006
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GRAYWOOL:
+  id: 35007
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LIGHTGRAYWOOL:
+  id: 35008
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CYANWOOL:
+  id: 35009
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PURPLEWOOL:
+  id: 350010
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BLUEWOOL:
+  id: 350011
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BROWNWOOL:
+  id: 350012
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GREENWOOL:
+  id: 350013
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+REDWOOL:
+  id: 350014
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BLACKWOOL:
+  id: 350015
+  price: 1.21
+  floor: 0.1
+  ceiling: 2
+  description: Found on sheep & dye-able!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DANDELION:
+  id: 37
+  price: 1.3
+  floor: 0.3
+  ceiling: 2
+  description: A pretty yellow flower!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ROSE:
+  id: 38
+  price: 1.3
+  floor: 0.3
+  ceiling: 2
+  description: A pretty red flower!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BROWNMUSHROOM:
+  id: 39
+  price: 1.19
+  floor: 0.05
+  ceiling: 2
+  description: Tasty.. or not?
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+REDMUSHROOM:
+  id: 40
+  price: 1.19
+  floor: 0.05
+  ceiling: 2
+  description: Tasty.. or not?
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDBLOCK:
+  id: 41
+  price: 2751.47
+  floor: 2400
+  ceiling: 3000
+  description: A block of solid gold!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONBLOCK:
+  id: 42
+  price: 458.58
+  floor: 400
+  ceiling: 500
+  description: A block of solid Iron!!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DOUBLESLABS:
+  id: 43
+  price: 2.17
+  floor: 1
+  ceiling: 3
+  description: Very sophisticated!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SLABS:
+  id: 44
+  price: 1.18
+  floor: 0.01
+  ceiling: 2
+  description: Half as sophisticated!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SANDSTONESLABS:
+  id: 44001
+  price: 1.18
+  floor: 0.01
+  ceiling: 2
+  description: Half as sophisticated!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PLANKSLABS:
+  id: 44002
+  price: 1.18
+  floor: 0.01
+  ceiling: 2
+  description: Half as sophisticated!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COBBLESLABS:
+  id: 44003
+  price: 1.18
+  floor: 0.01
+  ceiling: 2
+  description: Half as sophisticated!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BRICKSLABS:
+  id: 44004
+  price: 1.18
+  floor: 0.01
+  ceiling: 2
+  description: Half as sophisticated!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STONEBRICKSLABS:
+  id: 44005
+  price: 1.18
+  floor: 0.01
+  ceiling: 2
+  description: Half as sophisticated!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BRICKBLOCK:
+  id: 45
+  price: 20.86
+  floor: 15
+  ceiling: 25
+  description: Reminds me of Brooklyn!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+TNT:
+  id: 46
+  price: 63.06
+  floor: 49
+  ceiling: 73
+  description: Blows everything up!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BOOKSHELF:
+  id: 47
+  price: 16.96
+  floor: 7
+  ceiling: 24
+  description: Found in the homes of the sophisticated and educated!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MOSSYCOBBLE:
+  id: 48
+  price: 208.58
+  floor: 150
+  ceiling: 250
+  description: Found in Dungeons!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+OBSIDIAN:
+  id: 49
+  price: 126.86
+  floor: 80
+  ceiling: 160
+  description: Hardened Lava!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+TORCH:
+  id: 50
+  price: 0.67
+  floor: 0.2
+  ceiling: 1
+  description: Cheapest light source!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FIRE:
+  id: 51
+  price: 5.86
+  floor: 0.01
+  ceiling: 10
+  description: YOU CAVE. ME MAN. CAVEMAN MAKE FIRE!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MOBSPAWNER:
+  id: 52
+  price: 5.86
+  floor: 0.01
+  ceiling: 10
+  description: It.. makes monsters? Why would you want this?
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODENSTAIRS:
+  id: 53
+  price: 3.37
+  floor: 1.2
+  ceiling: 4.9
+  description: set up high with wooden stairs!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CHEST:
+  id: 54
+  price: 6.69
+  floor: 2
+  ceiling: 10
+  description: Used for hiding your darkest secrets!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDORE:
+  id: 56
+  price: 5502.94
+  floor: 4800
+  ceiling: 6000
+  description: A block of solid Diamond!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDBLOCK:
+  id: 57
+  price: 5502.94
+  floor: 4800
+  ceiling: 6000
+  description: A block of solid Diamond!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CRAFTBENCH:
+  id: 58
+  price: 2.67
+  floor: 1.5
+  ceiling: 3.5
+  description: Use it to built just about anything!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FURNACE:
+  id: 61
+  price: 2.09
+  floor: 1.5
+  ceiling: 2.5
+  description: Use it to burn all your stuff up or cook your food!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BURNINGFURNACE:
+  id: 62
+  price: 2.09
+  floor: 1.5
+  ceiling: 2.5
+  description: Use it to burn all your stuff up or cook your food!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LADDER:
+  id: 65
+  price: 1.59
+  floor: 1
+  ceiling: 2
+  description: Climb straight up anything!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+RAIL:
+  id: 66
+  price: 21.03
+  floor: 14
+  ceiling: 26
+  description: Helps minecarts move along!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COBBLESTAIRS:
+  id: 67
+  price: 1.25
+  floor: 0.9
+  ceiling: 1.5
+  description: Walk up high on cobble stairs!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LEVER:
+  id: 69
+  price: 1.18
+  floor: 0.01
+  ceiling: 2
+  description: Either off or on!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STONEPLATE:
+  id: 70
+  price: 1.72
+  floor: 0.2
+  ceiling: 2.8
+  description: Step to activate!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODENPLATE:
+  id: 72
+  price: 1.72
+  floor: 0.2
+  ceiling: 2.8
+  description: Step to activate!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+REDSTONEORE:
+  id: 73
+  price: 10.2
+  floor: 2
+  ceiling: 16
+  description: Conducts power!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GLOWINGREDSTONEORE:
+  id: 74
+  price: 10.2
+  floor: 2
+  ceiling: 16
+  description: Conducts power!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BUTTON:
+  id: 77
+  price: 1.82
+  floor: 1
+  ceiling: 2.4
+  description: Press to activate!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ICE:
+  id: 79
+  price: 1.82
+  floor: 1
+  ceiling: 2.4
+  description: Melts near hot stuff.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CACTUS:
+  id: 81
+  price: 4.34
+  floor: 2
+  ceiling: 6
+  description: Prickly! Found in deserts.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CLAYBLOCK:
+  id: 82
+  price: 4.34
+  floor: 2
+  ceiling: 6
+  description: Soft and mushy, like clay!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+JUKEBOX:
+  id: 84
+  price: 571.72
+  floor: 560
+  ceiling: 580
+  description: Plays lovely records!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FENCE:
+  id: 85
+  price: 1.14
+  floor: 0.2
+  ceiling: 1.8
+  description: Guard your territory!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PUMPKIN:
+  id: 86
+  price: 10.03
+  floor: 3
+  ceiling: 15
+  description: Scary or delicious?!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NETHERRACK:
+  id: 87
+  price: 0.71
+  floor: 0.3
+  ceiling: 1
+  description: Burns indefinitely!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SOULSAND:
+  id: 88
+  price: 5.1
+  floor: 1
+  ceiling: 8
+  description: Slows you down!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GLOWSTONE:
+  id: 89
+  price: 13.37
+  floor: 4
+  ceiling: 20
+  description: Light from the pits of hell!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+TRAPDOOR:
+  id: 96
+  price: 3.93
+  floor: 1
+  ceiling: 6
+  description: Kind of like.. a door for your floor!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STONEBRICKS:
+  id: 98
+  price: 11.03
+  floor: 4
+  ceiling: 16
+  description: Fancy Stronghold stone!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MOSSYSTONEBRICKS:
+  id: 98001
+  price: 11.03
+  floor: 4
+  ceiling: 16
+  description: Fancy Stronghold stone, moss edition!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CRACKEDSTONEBRICKS:
+  id: 98002
+  price: 11.03
+  floor: 4
+  ceiling: 16
+  description: Fancy Stronghold stone, cracked edition!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CIRCLESTONEBRICKS:
+  id: 98003
+  price: 11.03
+  floor: 4
+  ceiling: 16
+  description: Fancy Stronghold stone, circle edition!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONBARS:
+  id: 101
+  price: 21.54
+  floor: 11
+  ceiling: 29
+  description: Fit for prisons!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GLASSPANE:
+  id: 102
+  price: 0.15
+  floor: 0.08
+  ceiling: 0.2
+  description: Thinner than glass!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+VINES:
+  id: 106
+  price: 0.15
+  floor: 0.08
+  ceiling: 0.2
+  description: Seems like a vineyard kinda vine.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FENCEGATE:
+  id: 107
+  price: 0.15
+  floor: 0.08
+  ceiling: 0.2
+  description: Essential for any fence!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BRICKSTAIRS:
+  id: 108
+  price: 33.43
+  floor: 10
+  ceiling: 50
+  description: Walk up high with brick stairs!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STONEBRICKSTAIRS:
+  id: 109
+  price: 13.03
+  floor: 6
+  ceiling: 18
+  description: Walk up high with stairs from strongholds!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MYCELIUM:
+  id: 110
+  price: 13.03
+  floor: 6
+  ceiling: 18
+  description: Found in swamps.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LILYPAD:
+  id: 111
+  price: 13.03
+  floor: 6
+  ceiling: 18
+  description: Frogs love em, you will too!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NETHERBRICK:
+  id: 112
+  price: 6.06
+  floor: 0.5
+  ceiling: 10
+  description: Stolen from the strongholds of hell!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NETHERBRICKFENCE:
+  id: 113
+  price: 7.86
+  floor: 2
+  ceiling: 12
+  description: Stolen from the strongholds of hell!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NETHERBRICKSTAIRS:
+  id: 114
+  price: 7.86
+  floor: 2
+  ceiling: 12
+  description: Stolen from the strongholds of hell!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ENCHANTMENTTABLE:
+  id: 116
+  price: 1651.47
+  floor: 1300
+  ceiling: 1900
+  description: Used to enchant tools and armor!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ENDSTONE:
+  id: 121
+  price: 55.15
+  floor: 20
+  ceiling: 80
+  description: Straight from The End!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DRAGONEGG:
+  id: 122
+  price: 55.15
+  floor: 20
+  ceiling: 80
+  description: The hatchling for a dragon.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+REDSTONELAMP:
+  id: 123
+  price: 30.12
+  floor: 2
+  ceiling: 50
+  description: Finally, a lamp with a simple lightswitch!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SANDSTONESTAIRS:
+  id: 128
+  price: 0.5
+  floor: 0.1
+  ceiling: 3
+  description: Stairs of sand?
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BREWINGSTAND:
+  id: 379
+  price: 158.58
+  floor: 100
+  ceiling: 200
+  description: Used to make potions!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CAULDRON:
+  id: 380
+  price: 367.16
+  floor: 250
+  ceiling: 450
+  description: Holds water for potion-making!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONSHOVEL:
+  id: 256
+  price: 51.72
+  floor: 40
+  ceiling: 60
+  description: Digging with iron!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONPICKAXE:
+  id: 257
+  price: 153.43
+  floor: 130
+  ceiling: 170
+  description: Mining with iron!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONAXE:
+  id: 258
+  price: 103.43
+  floor: 80
+  ceiling: 120
+  description: Cutting with iron!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FLINTANDSTEEL:
+  id: 259
+  price: 63.43
+  floor: 40
+  ceiling: 80
+  description: Best friend to an Arsonist!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+APPLE:
+  id: 260
+  price: 217.16
+  floor: 100
+  ceiling: 300
+  description: A delicious fruit!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BOW:
+  id: 261
+  price: 15.47
+  floor: 2
+  ceiling: 25
+  description: Kill your opponents from far away!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ARROW:
+  id: 262
+  price: 6.27
+  floor: 1
+  ceiling: 10
+  description: Ammo for your bow!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COAL:
+  id: 263
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Good for burning!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CHARCOAL:
+  id: 263001
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Good for burning!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMOND:
+  id: 264
+  price: 713.6
+  floor: 450
+  ceiling: 900
+  description: The most precious jewel of them all!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONINGOT:
+  id: 265
+  price: 59.29
+  floor: 30
+  ceiling: 80
+  description: Tough as steel!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDINGOT:
+  id: 266
+  price: 337.87
+  floor: 250
+  ceiling: 400
+  description: Prettiest metal ever!
+  stock: 50
+  span: 100
+  buytime: 1340072379468
+  selltime: 1340072384191
+IRONSWORD:
+  id: 267
+  price: 103.43
+  floor: 80
+  ceiling: 120
+  description: Fight with Iron!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODENSWORD:
+  id: 268
+  price: 0.59
+  floor: 0.3
+  ceiling: 0.8
+  description: A weak sword made of wood!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODENSHOVEL:
+  id: 269
+  price: 0.33
+  floor: 0.1
+  ceiling: 0.5
+  description: Not a very reliable shovel!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODENPICKAXE:
+  id: 270
+  price: 0.73
+  floor: 0.5
+  ceiling: 0.9
+  description: I'm not sure if this can break stone..!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODENAXE:
+  id: 271
+  price: 0.53
+  floor: 0.3
+  ceiling: 0.7
+  description: Wood on wood cutting!!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STONESWORD:
+  id: 272
+  price: 1.09
+  floor: 0.5
+  ceiling: 1.5
+  description: A sword of stone!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STONESHOVEL:
+  id: 273
+  price: 0.65
+  floor: 0.3
+  ceiling: 0.9
+  description: A shovel of stone!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STONEPICKAXE:
+  id: 274
+  price: 1.52
+  floor: 0.7
+  ceiling: 2.1
+  description: Stone on Stone mining!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STONEAXE:
+  id: 275
+  price: 1.09
+  floor: 0.5
+  ceiling: 1.5
+  description: An axe of stone!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDSWORD:
+  id: 276
+  price: 1217.16
+  floor: 1100
+  ceiling: 1300
+  description: Kill your enemies with DIAMOND!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDSHOVEL:
+  id: 277
+  price: 608.87
+  floor: 480
+  ceiling: 700
+  description: Dirt and diamond, a nasty combo!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDPICKAXE:
+  id: 278
+  price: 1195.84
+  floor: 200
+  ceiling: 1900
+  description: Breaks through anything!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDAXE:
+  id: 279
+  price: 608.87
+  floor: 480
+  ceiling: 700
+  description: Cuts through anything!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STICK:
+  id: 280
+  price: 0.06
+  floor: 0.01
+  ceiling: 0.1
+  description: Just a wooden stick!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BOWL:
+  id: 281
+  price: 0.26
+  floor: 0.05
+  ceiling: 0.4
+  description: A bowl.. for soup!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSHROOMSOUP:
+  id: 282
+  price: 1.46
+  floor: 0.7
+  ceiling: 2
+  description: Shroom soup!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDSWORD:
+  id: 283
+  price: 600
+  floor: 400
+  ceiling: 800
+  description: Effective, but short-lived!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDSHOVEL:
+  id: 284
+  price: 317.16
+  floor: 200
+  ceiling: 400
+  description: Effective, but short-lived!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDPICKAXE:
+  id: 285
+  price: 967.16
+  floor: 850
+  ceiling: 1050
+  description: Effective, but short-lived!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDAXE:
+  id: 286
+  price: 617.16
+  floor: 500
+  ceiling: 700
+  description: Effective, but short-lived!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STRING:
+  id: 287
+  price: 13.79
+  floor: 5
+  ceiling: 20
+  description: String from spiders!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FEATHER:
+  id: 288
+  price: 13.79
+  floor: 5
+  ceiling: 20
+  description: Feathers from...zombies?!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GUNPOWDER:
+  id: 289
+  price: 27.57
+  floor: 10
+  ceiling: 40
+  description: The heart of a creeper!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODENHOE:
+  id: 290
+  price: 0.53
+  floor: 0.3
+  ceiling: 0.7
+  description: Till your farm, wood-style!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STONEHOE:
+  id: 291
+  price: 1.09
+  floor: 0.5
+  ceiling: 1.5
+  description: Till your farm, stone-style!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONHOE:
+  id: 292
+  price: 103.43
+  floor: 80
+  ceiling: 120
+  description: Till your farm, iron-style!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDHOE:
+  id: 293
+  price: 1234.31
+  floor: 1000
+  ceiling: 1400
+  description: Till your farm in excessive luxury!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDHOE:
+  id: 294
+  price: 558.58
+  floor: 500
+  ceiling: 600
+  description: Found on beaches!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SEEDS:
+  id: 295
+  price: 1.25
+  floor: 0.9
+  ceiling: 1.5
+  description: Grows wheat!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WHEAT:
+  id: 296
+  price: 1.06
+  floor: 2
+  ceiling: 0.4
+  description: Mmm, good for bread and cake!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BREAD:
+  id: 297
+  price: 9.34
+  floor: 7
+  ceiling: 11
+  description: Scrumptious carbohydrates!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LEATHERCAP:
+  id: 298
+  price: 26.72
+  floor: 15
+  ceiling: 35
+  description: A hat made of cow skin!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LEATHERTUNIC:
+  id: 299
+  price: 51.72
+  floor: 40
+  ceiling: 60
+  description: A shirt made of cow skin!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LEATHERPANTS:
+  id: 300
+  price: 36.72
+  floor: 25
+  ceiling: 45
+  description: Pants made of cow skin!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LEATHERBOOTS:
+  id: 301
+  price: 21.72
+  floor: 10
+  ceiling: 30
+  description: Boots made of cow skin!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CHAINMAILHELMET:
+  id: 302
+  price: 21.72
+  floor: 10
+  ceiling: 30
+  description: Legendary chainmail armor
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CHAINMAILCHESTPLATE:
+  id: 303
+  price: 21.72
+  floor: 10
+  ceiling: 30
+  description: Legendary chainmail armor
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CHAINMAILLEGGINGS:
+  id: 304
+  price: 21.72
+  floor: 10
+  ceiling: 30
+  description: Legendary chainmail armor
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CHAINMAILBOOTS:
+  id: 305
+  price: 21.72
+  floor: 10
+  ceiling: 30
+  description: Legendary chainmail armor
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONHELMET:
+  id: 306
+  price: 258.58
+  floor: 200
+  ceiling: 300
+  description: Ironhead!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONCHESTPLATE:
+  id: 307
+  price: 408.58
+  floor: 350
+  ceiling: 450
+  description: IronTorso!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONLEGGINGS:
+  id: 308
+  price: 392.16
+  floor: 275
+  ceiling: 475
+  description: Ironlegs!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONBOOTS:
+  id: 309
+  price: 208.58
+  floor: 150
+  ceiling: 250
+  description: IronFeet!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDHELMET:
+  id: 310
+  price: 3102.94
+  floor: 2400
+  ceiling: 3600
+  description: Flashiest helmet around!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDCHESTPLATE:
+  id: 311
+  price: 5020.1
+  floor: 4200
+  ceiling: 5600
+  description: Flashiest chestplate around!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDLEGGINGS:
+  id: 312
+  price: 4378.68
+  floor: 3500
+  ceiling: 5000
+  description: Flashiest leggings around!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DIAMONDBOOTS:
+  id: 313
+  price: 2468.63
+  floor: 2000
+  ceiling: 2800
+  description: Flashiest boots around!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDHELMET:
+  id: 314
+  price: 1542.89
+  floor: 1250
+  ceiling: 1750
+  description: 14K Helmet!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDCHESTPLATE:
+  id: 315
+  price: 4042.89
+  floor: 3750
+  ceiling: 4250
+  description: 20K Chestplate!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDLEGGINGS:
+  id: 316
+  price: 3542.89
+  floor: 3250
+  ceiling: 3750
+  description: 24K Leggings!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDBOOTS:
+  id: 317
+  price: 2042.89
+  floor: 1750
+  ceiling: 2250
+  description: Boots, now in White Gold!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FLINT:
+  id: 318
+  price: 12.13
+  floor: 1
+  ceiling: 20
+  description: This has a purpose..?
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+RAWPORKCHOP:
+  id: 319
+  price: 6.51
+  floor: 3
+  ceiling: 9
+  description: Mmm, Piggy!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COOKEDPORKCHOP:
+  id: 320
+  price: 10.86
+  floor: 5
+  ceiling: 15
+  description: Mmm, Piggy read to eat!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PAINTING:
+  id: 321
+  price: 13.79
+  floor: 5
+  ceiling: 20
+  description: Paintings by Notch Da Vinci himself!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDENAPPLE:
+  id: 322
+  price: 19644.66
+  floor: 5000
+  ceiling: 30000
+  description: An apple of GOLD. Rather hard to consume!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SIGN:
+  id: 323
+  price: 6.69
+  floor: 2
+  ceiling: 10
+  description: Used to write meaningful information!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODENDOOR:
+  id: 324
+  price: 3.34
+  floor: 1
+  ceiling: 5
+  description: A door of wood!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BUCKET:
+  id: 325
+  price: 158.58
+  floor: 100
+  ceiling: 200
+  description: A bucket for holding liquids.. or plasmas!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WATERBUCKET:
+  id: 326
+  price: 159.29
+  floor: 130
+  ceiling: 180
+  description: A bucket, with free water!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LAVABUCKET:
+  id: 327
+  price: 163.43
+  floor: 140
+  ceiling: 180
+  description: A bucket, with free molten death!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MINECART:
+  id: 328
+  price: 317.16
+  floor: 200
+  ceiling: 400
+  description: Takes you places!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SADDLE:
+  id: 329
+  price: 1034.31
+  floor: 800
+  ceiling: 1200
+  description: Used to ride piggies!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+IRONDOOR:
+  id: 330
+  price: 306.86
+  floor: 260
+  ceiling: 340
+  description: Burglars won't be able to open this badboy!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+REDSTONE:
+  id: 331
+  price: 5.9
+  floor: 0.1
+  ceiling: 10
+  description: Conducts power!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SNOWBALL:
+  id: 332
+  price: 5.9
+  floor: 0.1
+  ceiling: 10
+  description: Conducts power!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BOAT:
+  id: 333
+  price: 10.2
+  floor: 2
+  ceiling: 16
+  description: Use this to ride the waves into newly generated land!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LEATHER:
+  id: 334
+  price: 5.51
+  floor: 2
+  ceiling: 8
+  description: The skin of cattle!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MILK:
+  id: 335
+  price: 179.29
+  floor: 150
+  ceiling: 200
+  description: White, creamy goodness!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BRICK:
+  id: 336
+  price: 6.1
+  floor: 2
+  ceiling: 9
+  description: A brick of hardened clay!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CLAY:
+  id: 337
+  price: 5.69
+  floor: 1
+  ceiling: 9
+  description: Moldable puddy!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SUGARCANE:
+  id: 338
+  price: 1.8
+  floor: 0.1
+  ceiling: 3
+  description: Raw sugar!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PAPER:
+  id: 339
+  price: 3.09
+  floor: 0.4
+  ceiling: 5
+  description: Good for taking notes!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BOOK:
+  id: 340
+  price: 6.1
+  floor: 2
+  ceiling: 9
+  description: Good for reading.. except its blank!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SLIMEBALL:
+  id: 341
+  price: 55.15
+  floor: 20
+  ceiling: 80
+  description: A chunk of a slime!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MINECARTWITHCHEST:
+  id: 342
+  price: 287.87
+  floor: 200
+  ceiling: 350
+  description: Rapid transportation of items!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MINECARTWITHFURNACE:
+  id: 343
+  price: 0.18
+  floor: 0.0010
+  ceiling: 0.3
+  description: Choo Choo!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+EGG:
+  id: 344
+  price: 5.69
+  floor: 1
+  ceiling: 9
+  description: Right out of the chickens beh- you know.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COMPASS:
+  id: 345
+  price: 208.58
+  floor: 150
+  ceiling: 250
+  description: Shows you direction!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FISHINGROD:
+  id: 346
+  price: 25.5
+  floor: 5
+  ceiling: 40
+  description: Reel in a big one, son!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CLOCK:
+  id: 347
+  price: 2378.68
+  floor: 1500
+  ceiling: 3000
+  description: Can anyone say 'What time is it?' Not this thing!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GLOWSTONEDUST:
+  id: 348
+  price: 5.9
+  floor: 0.1
+  ceiling: 10
+  description: A particle of glowstone!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+RAWFISH:
+  id: 349
+  price: 6.27
+  floor: 1
+  ceiling: 10
+  description: Don't eat this unless you want Salmonella!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COOKEDFISH:
+  id: 350
+  price: 10.03
+  floor: 3
+  ceiling: 15
+  description: Delicious fishy!
+  stock: 50
+  span: 100
+  selltime: 0
+  buytime: 0
+INK:
+  id: 351
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Black Ink, from a squid!
+  stock: 50
+  span: 100
+  selltime: 0
+  buytime: 0
+REDINK:
+  id: 351001
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Red Ink, from the petals of a rose!
+  stock: 50
+  span: 100
+  selltime: 0
+  buytime: 0
+GREENINK:
+  id: 351002
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Green ink, from melted cacti!
+  stock: 50
+  span: 100
+  selltime: 0
+  buytime: 0
+BROWNINK:
+  id: 351003
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Brown ink, from the coloring of cocoa beans!
+  stock: 50
+  span: 100
+  selltime: 0
+  buytime: 0
+LAPISLAZULI:
+  id: 351004
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Prettiest ore in the world
+  stock: 50
+  span: 100
+  selltime: 0
+  buytime: 0
+PURPLEINK:
+  id: 351005
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Purple ink!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CYANINK:
+  id: 351006
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Cyan ink!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LIGHTGRAYINK:
+  id: 351007
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Light gray ink!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GRAYINK:
+  id: 351008
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Gray ink!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PINKINK:
+  id: 351009
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Pink ink!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LIMEINK:
+  id: 3510010
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Lime ink!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+YELLOWINK:
+  id: 3510011
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Yellow ink, from the petals of dandelions!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LIGHTBLUEINK:
+  id: 3510012
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Light blue ink!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MAGENTAINK:
+  id: 3510013
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Magenta ink!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ORANGEINK:
+  id: 3510014
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Orange ink!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BONEMEAL:
+  id: 3510015
+  price: 8.44
+  floor: 2
+  ceiling: 13
+  description: Crushed bone.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BONE:
+  id: 352
+  price: 6.27
+  floor: 1
+  ceiling: 10
+  description: Not at all creepy!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SUGAR:
+  id: 353
+  price: 2.97
+  floor: 0.1
+  ceiling: 5
+  description: Mmm, sweet and delicious; ready for baking!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CAKE:
+  id: 354
+  price: 89.94
+  floor: 5
+  ceiling: 150
+  description: This time, the cake is not a lie!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+REPEATER:
+  id: 356
+  price: 9.2
+  floor: 1
+  ceiling: 15
+  description: Extends a RedStone current!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COOKIE:
+  id: 357
+  price: 1295.84
+  floor: 300
+  ceiling: 2000
+  description: A Deliciously rare bite-size snack!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MAP:
+  id: 358
+  price: 31.36
+  floor: 5
+  ceiling: 50
+  description: Helps you make your way through the unknown!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SHEARS:
+  id: 359
+  price: 105.15
+  floor: 70
+  ceiling: 130
+  description: Sheep beware!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MELONSLICE:
+  id: 360
+  price: 4.89
+  floor: 0.5
+  ceiling: 8
+  description: Mmm, a summer treat!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PUMPKINSEED:
+  id: 361
+  price: 3136.04
+  floor: 500
+  ceiling: 5000
+  description: The seed of a pumpkin!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MELONSEED:
+  id: 362
+  price: 3136.04
+  floor: 500
+  ceiling: 5000
+  description: The seed of a melon!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+RAWBEEF:
+  id: 363
+  price: 10.03
+  floor: 3
+  ceiling: 15
+  description: Raw moo moo!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STEAK:
+  id: 364
+  price: 11.03
+  floor: 4
+  ceiling: 16
+  description: Ready to eat moo moo!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+RAWCHICKEN:
+  id: 365
+  price: 10.03
+  floor: 3
+  ceiling: 15
+  description: Cocka-doodle-munch!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COOKEDCHICKEN:
+  id: 366
+  price: 0.26
+  floor: 0.4
+  ceiling: 0.16
+  description: Cocka-doodle-devour!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ROTTENFLESH:
+  id: 367
+  price: 25.5
+  floor: 5
+  ceiling: 40
+  description: Gross. Poisonous zombie flesh!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ENDERPEARL:
+  id: 368
+  price: 313.6
+  floor: 50
+  ceiling: 500
+  description: A pearl of darkness!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BLAZEROD:
+  id: 369
+  price: 2960.0
+  floor: 75
+  ceiling: 5000
+  description: A rod from the fiery guardians of hell!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GHASTTEAR:
+  id: 370
+  price: 606.5
+  floor: 50
+  ceiling: 1000
+  description: The tear of a very depressed, very insane creature!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDNUGset:
+  id: 371
+  price: 33.33
+  floor: 15
+  ceiling: 60
+  description: A small piece of gold!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NETHERWART:
+  id: 372
+  price: 547.92
+  floor: 50
+  ceiling: 900
+  description: A hell-ridden plant!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GLASSBOTTLE:
+  id: 374
+  price: 4.14
+  floor: 0.1
+  ceiling: 7
+  description: A bottle to make potions in!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPIDEREYE:
+  id: 375
+  price: 29.7
+  floor: 1
+  ceiling: 50
+  description: I see 8 hairy legs!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+EXPERIENCE:
+  id: 999
+  price: 1.54
+  floor: 0.01
+  ceiling: 50
+  description: Orbs of wisdom!
+  stock: 100000
+  span: 100
+  buytime: 0
+  selltime: 0
+MUNDANEPOTION:
+  id: 373008192
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Base potion of Weakness and Splash Mundane potion
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WATERBOTTLE:
+  id: 373000
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Starting point for every recipe.. Nice h20
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUNDANEPOTIONEXTENDED:
+  id: 3730064
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Base for potion of weakness (extended)
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+THICKPOTION:
+  id: 3730064
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Base for potion of weakness
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFREGENERATION:
+  id: 373008193
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 23 hearts of health over 0:45
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFREGENERATIONEXTENDED:
+  id: 373008257
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 54 hearts of health over 2:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFSWIFTNESS:
+  id: 373008194
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases a players movement, sprinting speed, jumping length, and FOV, for 3:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFSWIFTNESSEXTENDED:
+  id: 373008258
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases a players movement, sprinting speed, jumping length, and FOV, for 8:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFFIRERESISTANCE:
+  id: 373008195
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Gives immunity to damage from fire, lava, and ranged Blaze attacks for 3:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFFIRERESISTANCEEXTENDED:
+  id: 373008259
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Gives immunity to damage from fire, lava, and ranged Blaze attacks for 8:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFPOISON:
+  id: 373008196
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Poisons the player for 0:45, reducing the health to 1 heart at most.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFPOISONEXTENDED:
+  id: 373008260
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Poisons the player for 2:00, reducing the health to 1 heart at most.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFHEALING:
+  id: 373008197
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 3 hearts
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFHEALINGEXTENDED:
+  id: 373008261
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 3 hearts
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFWEAKNESS:
+  id: 373008200
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Reduces melee damage by one heart for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFWEAKNESSEXTENDED:
+  id: 373008264
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Reduces melee damage by one heart for 4:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFSTRENGTH:
+  id: 373008201
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases melee damage by one and a half hearts for 3:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFSTRENGTHEXTENDED:
+  id: 373008265
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases melee damage by one and a half hearts for 8:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFSLOWNESS:
+  id: 373008202
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Players movement is slowed to a crouch for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFSLOWNESSEXTENDED:
+  id: 373008266
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Players movement is slowed to a crouch for 4:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFHARMING:
+  id: 373008204
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Inflicts 3 hearts of damage
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFHARMINGEXTENDED:
+  id: 373008268
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Inflicts 3 hearts of damage
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+AWKWARDPOTION:
+  id: 3730016
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: This potion is highly awkward, you should avoid social encounters.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFREGENERATIONII:
+  id: 373008225
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 24 hearts over 0:22 seconds
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFSWIFTNESSII:
+  id: 373008226
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases players movement, sprinting speed, jumping length, and FOV for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFFIRERESISTANCEII:
+  id: 373008227
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Gives immunity to damage from fire, lava, and ranged Blaze attacks for 3:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFPOISONII:
+  id: 373008228
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Poisons the player, reducing the health for :22 to half a heart at most.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFHEALINGII:
+  id: 373008229
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 6 hearts
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFWEAKNESSII:
+  id: 373008232
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Reduces melee damage by one heart for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFSTRENGTHII:
+  id: 373008233
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases melee damage by 3 hearts for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFSLOWNESSII:
+  id: 373008234
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Players movement is slowed to a crouch for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTIONOFHARMINGII:
+  id: 373008236
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Inflicts 6 hearts of damage
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHMUNDANEPOTION:
+  id: 3730016384
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Base potion of Weakness and Splash Mundane potion
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFREGENERATION:
+  id: 3730016385
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 19 hearts over 0:33
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFREGENERATIONEXTENDED:
+  id: 3730016449
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 42.5 hearts over 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFSWIFTNESS:
+  id: 3730016386
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases a players movement, sprinting speed, jumping length, and FOV, for 3:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFSWIFTNESSEXTENDED:
+  id: 3730016450
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases a players movement, sprinting speed, jumping length, and FOV, for 8:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFFIRERESISTANCE:
+  id: 3730016387
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Gives immunity to damage from fire, lava, and ranged Blaze attacks for 3:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFFIRERESISTANCEEXTENDED:
+  id: 3730016451
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Gives immunity to damage from fire, lava, and ranged Blaze attacks for 8:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFPOISON:
+  id: 3730016388
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Poisons humans, but undead and spiders are immune to this poison
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFPOISONEXTENDED:
+  id: 3730016452
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Poisons humans, but undead and spiders are immune to this poison
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFHEALING:
+  id: 3730016389
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores health of people, but hurts the undead.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFHEALINGEXTENDED:
+  id: 3730016453
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores health of people, but hurts the undead.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFWEAKNESS:
+  id: 3730016392
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Reduces melee damage by one heart for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFWEAKNESSEXTENDED:
+  id: 3730016456
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Reduces melee damage by one heart for 4:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFSTRENGTH:
+  id: 3730016393
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases melee damage by one and a half hearts for 3:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFSTRENGTHEXTENDED:
+  id: 3730016457
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases melee damage by one and a half hearts for 8:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFSLOWNESS:
+  id: 3730016394
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Players movement is slowed to a crouch for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFSLOWNESSEXTENDED:
+  id: 3730016458
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Players movement is slowed to a crouch for 4:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFHARMING:
+  id: 3730016396
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Hurts humans, but heals the undead
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFHARMINGEXTENDED:
+  id: 3730016460
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Hurts humans, but heals the undead
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFREGENERATIONII:
+  id: 3730016417
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 19.5 hearts over 0:16
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFSWIFTNESSII:
+  id: 3730016418
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases players movement, sprinting speed, jumping length, and FOV for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFFIRERESISTANCEII:
+  id: 3730016419
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Gives immunity to damage from fire, lava, and ranged Blaze attacks for 3:00
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFPOISONII:
+  id: 3730016420
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Poisons humans, but undead and spiders are immune to this poison
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFHEALINGII:
+  id: 3730016421
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Restores 6 hearts
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFWEAKNESSII:
+  id: 3730016424
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Reduces melee damage by one heart for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFSTRENGTHII:
+  id: 3730016425
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Increases melee damage by 3 hearts for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFSLOWNESSII:
+  id: 3730016426
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Players movement is slowed to a crouch for 1:30
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPLASHPOTIONOFHARMINGII:
+  id: 3730016428
+  price: 17.99
+  floor: 1
+  ceiling: 30
+  description: Hurts humans, but heals the undead
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISK13:
+  id: 2256
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song '13' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISKCAT:
+  id: 2257
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song 'Cat' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISKBLOCKS:
+  id: 2258
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song 'Blocks' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISKCHIRP:
+  id: 2259
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song 'Chirp' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISKFAR:
+  id: 2260
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song 'Far' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISKMALL:
+  id: 2261
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song 'Mall' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISKMELLOHI:
+  id: 2262
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song 'Mellohi' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISKSTAL:
+  id: 2263
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song 'Stal' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISKSTRAD:
+  id: 2264
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song 'Strad' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISKWARD:
+  id: 2265
+  price: 4769.13
+  floor: 200
+  ceiling: 8000
+  description: A CD with the Song 'Ward' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MUSICDISK11:
+  id: 2266
+  price: 5349.03
+  floor: 1600
+  ceiling: 8000
+  description: A CD with the Song '11' on it
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PROTECTION:
+  id: 2500
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Converts all damage from all sources to armor damage.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FIREPROTECTION:
+  id: 2501
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Protection against fire.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FEATHERFALLING:
+  id: 25002
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Protection against fall damage
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BLASTPROTECTION:
+  id: 2503
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Protection against explosions.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PROJECTILEPROTECTION:
+  id: 2504
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Protection against projectiles.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+RESPIRATION:
+  id: 2505
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Decreases the rate of air loss underwater.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+AQUAAFFINITY:
+  id: 2506
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Increases underwater mining rate.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SHARPNESS:
+  id: 2516
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Extra damage.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SMITE:
+  id: 2517
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Extra damage to zombies, zombie pigmen, and skeletons.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BANEOFANTHROPODS:
+  id: 2518
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Extra damage to spiders, cave spiders, and silverfish
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+KNOCKBACK:
+  id: 2519
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Increases the knockback dealt when attacking mobs and players.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FIREASPECT:
+  id: 2520
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Lights the target on fire.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LOOTING:
+  id: 2521
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Mobs have a chance to drop more loot.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+EFFICIENCY:
+  id: 2532
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Faster resource gathering.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SILKTOUCH:
+  id: 2533
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Blocks mined will drop themselves, even if they should drop something else.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+UNBREAKING:
+  id: 2534
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: At each use, there's a chance that the tool's durability will not decrease
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FORTUNE:
+  id: 2535
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Can multiply the drop rate of items from blocks.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POWER:
+  id: 2548
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Extra damage
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PUNCH:
+  id: 2549
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Knockback effect on mobs.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FLAME:
+  id: 2550
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Sets arrows and mobs on fire.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+INFINITY:
+  id: 2551
+  price: 375.74
+  floor: 200
+  ceiling: 500
+  description: Gives unlimited shots with a single arrow.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+LEAVES:
+  id: 18
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Leaves of a tree!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPRUCELEAVES:
+  id: 18001
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Leaves of a tree!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BIRCHLEAVES:
+  id: 18002
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Leaves of a tree!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+JUNGLELEAVES:
+  id: 18003
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Leaves of a tree!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+EMERALDORE:
+  id: 129
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Mine this to get an emerald.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+EMERALD:
+  id: 388
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: A shiny piece of emerald!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+EMERALDBLOCK:
+  id: 133
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: A block of shiny emeralds!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ENDERCHEST:
+  id: 130
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: A chest containing a whole dimension.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+TRIPWIREHOOK:
+  id: 131
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Caution! Do not trip.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODENSLAB:
+  id: 126
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: A slab of a piece of wood.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SANDSTONESTAIR:
+  id: 128
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: A stair made out of sandstone.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COCABEAN:
+  id: 351001
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: The been of a coca plant.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BOOK:
+  id: 340
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: A book.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BOOKANDQUILL:
+  id: 386
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Write a novel with this!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MAP:
+  id: 358
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Don't get lost!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+EMPTYMAP:
+  id: 395
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: This won't help much.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ITEMFRAME:
+  id: 389
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Solely for showing off!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+INVISIBILITY:
+  id: 373008206
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: To watch the ladies shower.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NIGHTVISION:
+  id: 373008198
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Who needs sleep anyways?
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NETHERSTAR:
+  id: 399
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: All the hassle, for a star?
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PUMPKINPIE:
+  id: 400
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Mmmm, pie!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CARROT:
+  id: 391
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Eeh, what's up doc?
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GOLDENCARROT:
+  id: 396
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: For golden bunnies.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CARROTONASTICK:
+  id: 398
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: To ride pigs. All of them.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POTATO:
+  id: 392
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Potato, the answer to everything.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BAKEDPOTATO:
+  id: 393
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Such a delicious potato!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+POISONOUSPOTATO:
+  id: 394
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Here, eat this!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WOODBUTTON:
+  id: 143
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Press me!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SKELETONHEAD:
+  id: 144
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: That'll scare 'em off!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WITHERHEAD:
+  id: 144001
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: That'll scare 'em off!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ZOMBIEHEAD:
+  id: 144002
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: That'll scare 'em off!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+STEVEHEAD:
+  id: 144003
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: He wasn't fun anyways.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CREEPERHEAD:
+  id: 144004
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: That'll scare 'em off!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+COBBLEWALL:
+  id: 139
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Looks like we'll need to find another way around.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MOSSYCOBBLEWALL:
+  id: 139001
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Looks like we'll need to find another way around.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ANVIL:
+  id: 145
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: I feel like a true blacksmith now!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BEACON:
+  id: 138
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Pew, pew, laserbeams!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FIREWORK:
+  id: 401
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: In all shapes and colours!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ENCHANTEDBOOK:
+  id: 403
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: I don't like to read, but this is shiny!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NETHERBRICKSLAB:
+  id: 4406
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: This'll ease the path!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+QUARTZSLAB:
+  id: 44007
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: This'll ease the path!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+NETHERQUARTZ:
+  id: 406
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: To create beatiful quartz!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+QUARTZ:
+  id: 153
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: To create beatiful quartz!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+QUARTZBLOCK:
+  id: 155
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Such beauty!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+CHISELEDQUARTZBLOCK:
+  id: 155001
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Such beauty!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+PILLARQUARTZBLOCK:
+  id: 155002
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Such beauty!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+QUARTZSTAIRS:
+  id: 156
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Such beauty!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+TRAPPEDCHEST:
+  id: 146
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Wait until it goes boom!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+REDSTONECOMPARATOR:
+  id: 404
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Compare, but don't judge!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+TNTMINECART:
+  id: 407
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Boom on rails!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+HOPPERMINECART:
+  id: 408
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: That'll be useful!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+HOPPER:
+  id: 154
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Hop hop!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DROPPER:
+  id: 158
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Drop it!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+DAYLIGHTCENSOR:
+  id: 151
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Censor the daylight, like a boss.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+REDSTONEBLOCK:
+  id: 152
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: A collection of precious redstone.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ACTIVATORRAIL:
+  id: 157
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Don't send signals while driving!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+REDSTONETORCH:
+  id: 76
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Sends signals!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SNOWBLOCK:
+  id: 80
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: To throw at unexpecting children!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+WEB:
+  id: 30
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Pretty sticky.
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MELONBLOCK:
+  id: 103
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: A bunch of nomnom!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+JACKOLANTERN:
+  id: 91
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Scary lighting!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FERMENTEDSPIDEREYE:
+  id: 376
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Can he still see through this?
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BLAZEPOWDER:
+  id: 377
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: It's not coke, but worth trying!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+MAGMACREAM:
+  id: 378
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Too bad it isn't ice cream..
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+EYEOFENDER:
+  id: 381
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: I wonder if anyone ever saw through this eye..
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+GLISTERINGMELON:
+  id: 382
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Yummie melon!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SNOW:
+  id: 78
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Brrr, pretty cold!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+SPRUCESTAIR:
+  id: 134
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Up and down!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+JUNGLESTAIR:
+  id: 136
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Up and down!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+BIRCHSTAIR:
+  id: 135
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Up and down!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FLOWERPOT:
+  id: 390
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: The best pot in town!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+FIRECHARGE:
+  id: 385
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Charge the fire!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0
+ENCHANTBOTTLE:
+  id: 384
+  price: 0.50
+  floor: 0.1
+  ceiling: 1
+  description: Yummie experience!
+  stock: 50
+  span: 100
+  buytime: 0
+  selltime: 0

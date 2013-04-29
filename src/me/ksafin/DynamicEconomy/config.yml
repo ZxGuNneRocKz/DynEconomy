@@ -1,0 +1,180 @@
+# This is the DynamicEconomy main config file.
+# It contains settings for many features. 
+# Pay attention to the comments above each setting
+# The comment will explain what the setting does, and valid options
+
+# This is the text that will appear before any DE chat output
+# Put your prefix within the ''. Color codes work.
+prefix: ''
+
+# This is the default amount that will be sold or bought if a user omits an amount
+# Must be an integer greater than or equal to 0.
+default-amount: 1
+
+# Should users be notified of the new price of an item after they sell or buy it?
+# Must be true or false.
+local-price-notify: true
+
+# Should the entire server be notified whenever the price of any item changes?
+# Must be true or false.
+global-price-notify: true
+
+# Should DynamicEconomy write to the custom DynamicEconomy log?
+# Must be true or false.
+log-writing: true
+
+# The world-wide sales tax. Only applicable if you don't use regions.
+# Users making a sale will be taxed this percent of their total sale
+# Must be a decimal between 0 and 1 representing a percentage.
+salestax: 0.0
+
+# The world-wide purchase tax. Only applicable if you don't use regions.
+# Users making a purchase will be charged this additional percent of their total purchase.
+# Must be a decimal between 0 and 1 representing a percentage.
+purchasetax: 0.0
+
+# Should earnings from purchase & sales taxes be deposited into an account?
+# Must be true or false.
+deposit-tax-to-account: false
+
+# If the above option is set to true, this is the name of the account
+# Must be a valid text name, put within the ''
+account-name: ''
+
+tax-account-is-bank: false
+
+# Should basic location restrictions be enforced?
+# If yes, the following 2 settings, min & max y, will be used to restrict locations of DE usage.
+# Must be true or false.
+location-restrict: false
+
+# If the above is set to true, this is the minimum y level at which users
+# will be able to access the economy.
+# Must be an integer greater than or equal to 0
+minimum-y: 0
+
+# If location-restirct is set to true, this is the max y level at which users
+# will be able to access the economy.
+# Must be an integer greater than or equal to 0.
+maximum-y: 128
+
+# Enable alternate commands? /deprice, /debuy, and /desell will replace /price, /buy, and /sell
+# Must be true or false.
+alt-commands: false
+
+# Enable loans? 
+# Must be true or false.
+use-loans: true
+
+# Use a static interest defined below?
+# If false, dynamic interest will be used.
+# Must be true or false.
+use-static-interest: false
+
+# Static interest rate that will be used 
+# Must be a value above 0 representing a percentage in decimal form (.05 = 5%)
+interest-rate: 0.05
+
+# The dynamic interest rate. Do not set this, it is DE generated.
+dynamic-interest-rate: 0.0
+
+# A special value used by DE for dynamic interest calculations. Do not change.
+dynamic-compression-rate: 0.0
+
+# Time, in minutes, after which users have to pay back loans.
+payback-time: 20
+
+# The maximum number of loans a user can have at one time.
+max-num-loans: 1
+
+# Maximum loan quantity a user can take out.
+# Must be greater than 0, and the minimum loan quantity.
+max-loan-amount: 500
+
+# Minimum loan quantity a user can take out. 
+# Must be greater than 0.
+min-loan-amount: 10
+
+# Deposit loan interest into an account?
+# Must be true or false.
+use-loan-account: false
+
+# If above is true, this is the account in which to deposit the funds.
+# Must be a valid text account name, within the ''
+loan-account-name: ''
+
+loan-account-is-bank: false
+
+# The time, in ticks, after which DE will check if users have loans due.
+# 20 ticks = 1 second.
+# Must be valid integer tick amount.
+loan-check-interval: 300
+
+# A list of items banned from sale, separated by commas.
+# Names of items must be the names as found in Items.yml
+banned-sale-items: ''
+
+# A list of items banned from purchase, separated by commas.
+# Names of items must be the names as found in Items.yml
+banned-purchase-items: ''
+
+# If an item isn't purchased for a long time, have its price decay?
+# This may encourage purchasing the item with a new lower price
+# Must be true or false.
+enable-over-time-price-decay: true
+
+# If an item isn't sold for a long time, have its price inflate?
+# This may encourage selling the item with a new higher price
+# Must be true or false.
+enable-over-time-price-inflation: true
+
+# The percent by which to decay the price of an item, when appropriate
+# Must be a percentage, in decimal form.
+over-time-price-decay-percent: 0.1
+
+# The percent by which to inflate the price of an item, when appropriate
+# Must be a percentage, in decimal form.
+over-time-price-inflation-percent: 0.1
+
+# The time, in seconds, that after which if an item hasn't been sold or bought, its price will inflate/decay, respectively.
+# Must be valid integer amount, of seconds, greater than 0.
+over-time-price-change-period: 1440
+
+# The interval, in seconds, after which DE will check if an item is due to inflate or decay in price.
+over-time-price-change-period-check: 60
+
+# The world or world(s) in which DynamicEconomy is enabled.
+# Separate worlds by commas, if using multiple worlds.
+dynecon-world: world
+
+# The currency symbol used by DE.
+currency-symbol: $
+
+# The color code for the 'tagline' of a dynamicsign
+# Must be a valid color code.
+sign-tagline-color: '&a'
+
+# The color code for the 'info of a dynamicsign
+# Must be a valid color code.
+sign-info-color: '&f'
+
+# The color code for an invalid dynamicsign
+# Must be a valid color code.
+sign-invalid-color: '&c'
+
+# Enable the /buy and /sell commands (enchantment specific commands, too)?
+# Must be true or false
+enable-buysell-commands: true
+
+# MySQL Section
+# MYSQL IS NOT YET IMPLEMENTED, DO NOT UNDER ANY CIRCUMSTANCES CHANGE THIS SECTION.
+
+# In order to use & customize your MySQL settings, you must first enable MySQL by setting the below option to true
+use-mysql: false
+
+# The following are settings for your specific MySQL set-up.
+hostname: 'localhost'
+database: 'minecraft'
+port: '3306'
+user: 'root'
+password: 'root'

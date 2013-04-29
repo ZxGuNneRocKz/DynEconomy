@@ -1,0 +1,314 @@
+name: DynamicEconomy
+main: me.ksafin.DynamicEconomy.DynamicEconomy
+version: 9.3
+
+description: This plugin allows users to buy and sell items at dynamically generated prices.
+author: kSafin (Kirill Safin) and edited by number1_Master
+depend: [Vault]
+commands:
+   price:
+     description: Returns the Price of an Item.
+     permission: dynamiceconomy.price
+     usage: /price [Item] [Type] (Amount)
+   setfloor:
+     description: Sets the minimum price of a given Item.
+     permission: dynamiceconomy.setfloor
+     usage: /setfloor [Item] [FloorPrice]
+   setceiling:
+     description: Sets the maximum price of a given Item.
+     permission: dynamiceconomy.setceiling
+     usage: /setceiling [Item] [CeilingPrice]
+   getfloor:
+     description: Returns the minimum price of a given Item.
+     permission: dynamiceconomy.getfloor
+     usage: /getfloor [Item]
+   getceiling:
+     description: Returns the maximum price of a given Item.
+     permission: dynamiceconomy.getceiling
+     usage: /getceiling [Item]
+   getspan:
+     description: Returns the Price Span of a given Item.
+     permission: dynamiceconomy.getspan
+     usage: /getspan [Item]
+   setspan:
+     description: Sets the Price Span of a given Item.
+     permission: dynamiceconomy.setspan
+     usage: /setspan [Item] [Span]
+   dynamiceconomy:
+     description: Lists all Dynamic Economy commands, usages, and purposes
+     permission: dynamiceconomy.dynamiceconomy
+     usage: /dynamiceconomy (Page)
+   buy:
+     description: Allows player to purchase an amount of an item
+     permission: dynamiceconomy.buy
+     usage: /buy [Item] (Amount)
+   sell:
+     description: Allows player to sell an amount of an item
+     permission: dynamiceconomy.sell
+     usage: /sell [Item] (Amount)
+   addstock:
+     description: Allows player to add to current item stock
+     permission: dynamiceconomy.addstock
+     usage: /addstock [Item] [AdditionalStock]
+   dynamiceconomyreloadconfig:
+     description: Reloads the dynamiceconomy config.yml file
+     permission: dynamiceconomy.dynamiceconomyreloadconfig
+     usage: /dynamiceconomyreloadconfig
+   removestock:
+     description: Allows player to take from the current item stock
+     permission: dynamiceconomy.removestock
+     usage: /removestock [Item] [RemoveStock]
+   getdurability:
+     description: Allows player to find out durability percentage, max uses, and current uses, of an item in hand or in any armor slot.
+     permission: dynamiceconomy.getdurability
+     usge: /getdurability (armor/helmet/chestplate/leggings/boots)
+   dynecon:
+     description: Shorthand for /dynamiceconomy
+     permission: dynamiceconomy.dynamiceconomy
+     usage: /dynecon (page)
+   curtaxes:
+     description: Shows user current taxes
+     permission: dynamiceconomy.curtaxes
+     usage: /curtaxes
+   settax:
+     description: Allows user to set taxes
+     permission: dynamiceconomy.settax
+     usage: /settax [sale|purchase] [amount]
+   debuy:
+     description: Same as buy command, but different name, to prevent conflicts with other plugins
+     permission: dynamiceconomy.buy
+     usage: /debuy [Item] (Amount)
+   desell:
+     description: Same as sell command, but different name, to prevent conflicts with other plugins
+     permission: dynamiceconomy.sell
+     usage: /desell [Item] (Amount)
+   deprice:
+     description: Same as price command, but different name, to prevent conflicts with other plugins
+     permission: dynamiceconomy.price
+     usage: /deprice [Item] [Type] (Amount)
+   loan:
+     description: Lets user request a loan for an amount specified
+     permission: dynamiceconomy.loan
+     usage: /loan [Amount]
+   curinterest:
+     description: Tells user current interest rate on loans
+     permission: dynamiceconomy.curinterest
+     usage: /curinterest
+   curloans:
+     description: Tells user their current loans, and info of these loans.
+     permission: dynamiceconomy.loan
+     usage: /curloans (loan #)
+   curworld:
+     description: Tells user their current world
+     permission: dynamiceconomy.curworld
+     usage: /curworld
+   banitem:
+     description: Bans the given item from either sale/purchase
+     permission: dynamiceconomy.banitem
+     usage: /banitem [item] [sale|purchase]
+   unbanitem:
+     description: Unbans the given item from either sale/purchase
+     permission: dynamiceconomy.unbanitem
+     usage: /unbanitem [Item] [sale|purchase]
+   marketquiet:
+     description: Disables global price notifications for a user
+     permission: dynamiceconomy.marketquiet
+     usage: /marketquiet
+   addalias:
+     description: Adds a given alias for a given item
+     permission: dynamieconomy.alias
+     usage: /addalias [Alias] [Item]
+   removealias:
+     description: Removes a given alias
+     permission: dynamieconomy.alias
+     usage: /removealias [Alias]
+   canibuy:
+     description: Checks if user can buy an item.
+     permission: dynamiceconomy.canibuy
+     usage: /canibuy [Item]
+   canisell:
+     description: Checks if user can sell an item.
+     permission: dynamiceconomy.canisell
+     usage: /canisell [Item]
+   buyenchantment:
+     description: Purchases an enchantment for the item currently held.
+     permission: dynamiceconomy.buyenchantment
+     usage: /buyenchantment [Enchantment] [I-V,1-5]
+   sellenchantment:
+     description: Sells an enchantment from the item currently held.
+     permission: dynamiceconomy.sellenchantment
+     usage: /sellenchantment [Enchantment]
+   priceenchantment:
+     description: Gives the price of an enchantment, along with other info.
+     permission: dynamiceconomy.priceenchantment
+     usage: /priceenchantment [Enchantment] [Level] (Buy|Sell)  
+   renewpricing:
+     description: Re-calculates prices of all items based on their stock.
+     permission: dynamiceconomy.renew
+     usage: /renewpricing
+     
+     
+permissions:
+  dynamiceconomy.*:
+    description: Gives access to all dynamiceconomy commands
+    children:
+      dynamiceconomy.price: true
+      dynamiceconomy.setfloor: true
+      dynamiceconomy.getfloor: true
+      dynamiceconomy.setceiling: true
+      dynamiceconomy.getceiling: true
+      dynamiceconomy.getspan: true
+      dynamiceconomy.setspan: true
+      dynamiceconomy.dynamiceconomy: true
+      dynamiceconomy.buy: true
+      dynamiceconomy.sell: true
+      dynamiceconomy.addstock: true
+      dynamiceconomy.dynamiceconomyreloadconfig: true
+      dynamiceconomy.removestock: true
+      dynamiceconomy.getdurability: true
+      dynamiceconomy.dynecon: true
+      dynamiceconomy.curtaxes: true
+      dynamiceconomy.settax: true
+      dynamiceconomy.loan: true
+      dynamiceconomy.curinterest: true
+      dynamiceconomy.curworld: true
+      dynamiceconomy.banitem: true
+      dynamiceconomy.unbanitem: true
+      dynamiceconomy.marketquiet: true
+      dynamiceconomy.alias: true
+      dynamiceconomy.canibuy: true
+      dynamiceconomy.canisell: true
+      dynamiceconomy.buyenchantment: true
+      dynamiceconomy.sellenchantment: true
+      dynamiceconomy.priceenchantment: true
+      dynamiceconomy.renew: true
+      dynamiceconomy.createshop: true
+      dynamiceconomy.createsign: true
+      
+  dynamiceconomy.customer:
+    description: Gives access to all basic user settings of dynamiceconomy
+    children:
+      dynamiceconomy.price: true
+      dynamiceconomy.setprice: false
+      dynamiceconomy.setfloor: false
+      dynamiceconomy.getfloor: false
+      dynamiceconomy.setceiling: false
+      dynamiceconomy.getceiling: false
+      dynamiceconomy.getspan: false
+      dynamiceconomy.setspan: false
+      dynamiceconomy.dynamiceconomy: true
+      dynamiceconomy.buy: true
+      dynamiceconomy.sell: true
+      dynamiceconomy.addstock: false
+      dynamiceconomy.dynamiceconomyreloadconfig: false
+      dynamiceconomy.removestock: false
+      dynamiceconomy.getdurability: true
+      dynamiceconomy.dynecon: true 
+      dynamiceconomy.curtaxes: true
+      dynamiceconomy.settax: false
+      dynamiceconomy.loan: true
+      dynamiceconomy.curinterest: true
+      dynamiceconomy.curworld: true
+      dynamiceconomy.banitem: false
+      dynamiceconomy.unbanitem: false
+      dynamiceconomy.marketquiet: true
+      dynamiceconomy.alias: false
+      dynamiceconomy.canibuy: true
+      dynamiceconomy.canisell: true
+      dynamiceconomy.buyenchantment: true
+      dynamiceconomy.sellenchantment: true
+      dynamiceconomy.priceenchantment: true
+      dynamiceconomy.renew: true
+      dynamiceconomy.createshop: false
+      dynamiceconomy.createsign: false
+      
+  dynamiceconomy.price:
+    description: Allows user to find price of an Item
+    default: op
+  dynamiceconomy.setfloor:
+    description: Allows user to set the minimum price of an Item
+    default: op
+  dynamiceconomy.setceiling:
+    description: Allows user to set the maximum price of an Item
+    default: op
+  dynamiceconomy.getfloor:
+    description: Allows user to find the minimum price of an Item
+    default: op
+  dynamiceconomy.getceiling:
+    description: Allows user to find the maximum price of an Item
+    default: op
+  dynamiceconomy.getspan:
+    description: Allows user to find the price span of an Item
+    default: op
+  dynamiceconomy.setspan:
+    description: Allows user to set the price span of an Item
+    default: op
+  dynamiceconomy.dynamiceconomy:
+    description: Allows user to access the help page for the plugin
+    default: op
+  dynamiceconomy.buy:
+    description: Allows user to buy items.
+    default: op
+  dynamiceconomy.sell:
+    description: Allows user to sell items.
+    default: op
+  dynamiceconomy.addstock:
+    description: Allows user to add stock for an item
+    default: op
+  dynamiceconomy.dynamiceconomyreloadconfig:
+    description: Allows player to reload Dynamic Economy config.yml
+    default: op
+  dynamiceconomy.removestock:
+    description: Allows player to remove stock for an item
+    default: op
+  dynamiceconomy.curtaxes:
+    description: Allows players to find out current sales and purchase taxes
+    default: op
+  dynamiceconomy.settax:
+    description: Allows player to set sales and purchase taxes
+    default: op
+  dynamiceconomy.loan:
+    description: Lets users get loans, and find info on their current loans
+    default: op
+  dynamiceconomy.curinterest:
+    description: Lets users find out current loan interest rate
+    default: op
+  dynamiceconomy.curworld:
+    description: Tells users their current world
+    default: op
+  dynamiceconomy.banitem:
+    description: Bans the given item from either sale/purchase
+    default: op
+  dynamiceconomy.unbanitem:
+    description: Unbans the given item from either sale/purchase
+    default: op
+  dynamiceconomy.marketquiet:
+    description: Disables global price notifications for a user
+    default: op
+  dynamiceconomy.alias:
+    description: Gives ability to add and remove aliases
+    default: op
+  dynamiceconomy.canibuy:
+    description: Gives permission to a user to check if they can buy a particular item
+    default: op
+  dynamiceconomy.canisell:
+    description: Gives permission to a user to check if they can sell a particular item
+    default: op
+  dynamiceconomy.buyenchantment:
+    description: Gives permission to buy enchantments for items.
+    default: op
+  dynamiceconomy.sellenchantment:
+    description: Gives permission to sell enchantments from items.
+    default: op
+  dynamiceconomy.priceenchantment:
+    description: Gives permission to find the price of an enchantment.
+    default: op
+  dynamiceconomy.renew:
+    description: Gives permission to re-calculate the prices for all items based on stock.
+    default: op
+  dynamiceconomy.createshop:
+    description: Gives permission to create a DynamicShop
+    default: op
+  dynamiceconomy.createsign:
+    description: Gives permission to create a DynamicSign
+    default: op
